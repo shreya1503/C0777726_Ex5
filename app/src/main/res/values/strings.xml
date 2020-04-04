@@ -1,33 +1,39 @@
 <resources>
-    <string name="app_name">complaint_history</string>
+    <string name="app_name">Complaint_Filling</string>
+
     <string-array name="suffix">
-        <item>Choose a type</item>
-        <item>mr</item>
-        <item>mrs</item>
-        <item>miss</item>
-        <item>Dr</item>
+        <item>Select One</item>
+        <item>Mr.</item>
+        <item>Mrs.</item>
+        <item>Miss.</item>
+        <item>Dr.</item>
+        <item>Lord</item>
+        <item>Sir</item>
     </string-array>
 
     <string-array name="status">
-        <item>choose one type</item>
+        <item>Select One</item>
         <item>Full time</item>
         <item>Part time</item>
-        <item>trainee</item>
+        <item>Trainee</item>
     </string-array>
+
     <string-array name="designation">
-        <item>Choose a type</item>
-        <item>software engineer</item>
-        <item>designer</item>
-        <item>marketing</item>
-        <item>support engineer</item>
-        <item>project manager</item>
+        <item>Select One</item>
+        <item>Software Engineer</item>
+        <item>Designer</item>
+        <item>Marketing</item>
+        <item>Support Engineer</item>
+        <item>Project Manager</item>
     </string-array>
+
     <string-array name="issue">
-        <item>Choose a type</item>
-        <item>network problem</item>
-        <item>net slow</item>
-        <item>system crashing</item>
-        <item>software installation</item>
-        <item>less speed</item>
+        <item>Select One</item>
+        <item>Network Problem</item>
+        <item>Internet Buffering</item>
+        <item>System Crashing</item>
+        <item>Software Installation</item>
+        <item>Speed Issue</item>
     </string-array>
+
 </resources>

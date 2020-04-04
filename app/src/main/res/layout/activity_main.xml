@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F6CBCB"
+    android:background="#C9B4CF"
     tools:context=".MainActivity">
 
     <Button
@@ -15,7 +15,7 @@
         android:layout_marginTop="500dp"
         android:layout_marginEnd="147dp"
         android:layout_marginBottom="500dp"
-        android:background="#B87676"
+        android:background="#7E7888"
         android:text="File Complaint"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"

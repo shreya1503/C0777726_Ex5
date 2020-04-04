@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F6CBCB"
+    android:background="#C9B4CF"
+    android:textAlignment="textStart"
     tools:context=".Activity3">
 
     <TextView
@@ -14,7 +15,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:text="TEXT VIEW"
-        android:textAlignment="center"
+        android:textAlignment="inherit"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

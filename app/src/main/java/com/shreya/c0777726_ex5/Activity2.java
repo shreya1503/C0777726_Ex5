@@ -198,45 +198,45 @@ public class Activity2 extends AppCompatActivity
 
                 if (firstname.getText().toString().matches(""))
                 {
-                    firstname.setError("enter firstname");
+                    firstname.setError("Enter First Name");
                 } else if (lastname.getText().toString().matches(""))
                 {
 
-                    lastname.setError("enter lastname");
+                    lastname.setError("Enter Last Name");
                 } else if (streetno.getText().toString().matches(""))
                 {
-                    streetno.setError("enter streetNo");
+                    streetno.setError("Enter Street No.");
                 } else if (streetname.getText().toString().matches(""))
                 {
-                    streetname.setError("enter streetName");
+                    streetname.setError("Enter Street Name");
 
                 } else if (province.getText().toString().matches(""))
                 {
-                    province.setError("enter province");
+                    province.setError("Enter Province");
 
                 } else if (city.getText().toString().matches(""))
                 {
-                    city.setError("enter city");
+                    city.setError("Enter City");
 
                 } else if (country.getText().toString().matches(""))
                 {
-                    country.setError("enter country");
+                    country.setError("Enter Country");
 
                 } else if (postalcode.getText().toString().matches(""))
                 {
-                    postalcode.setError("enter postalcode");
+                    postalcode.setError("Enter Postal Code");
 
                 } else if (email.getText().toString().matches(""))
                 {
-                    email.setError("enter email");
+                    email.setError("Enter Email");
 
                 } else if (countrycode.getText().toString().matches(""))
                 {
-                    countrycode.setError("enter country code");
+                    countrycode.setError("Enter Country Code");
 
                 } else if (cellnumber.getText().toString().matches(""))
                 {
-                    cellnumber.setError("enter cell number");
+                    cellnumber.setError("Enter Cell Number");
 
                 } else
                 {
