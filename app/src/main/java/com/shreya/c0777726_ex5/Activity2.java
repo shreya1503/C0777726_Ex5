@@ -327,7 +327,6 @@ public class Activity2 extends AppCompatActivity
         }
     }
 
-
     private class complaintIssues
     {
         public complaintIssues(String selectedsuffix, String selectedfirstname, String selectedlastname, String selectedempStatus, String selectedDesgs, String selectedStreetNo, String selectedStreetName, String selectedProvince, String selectedCity, String selectedCountry, String selectedPostalcode, String selectedEmail, String selectedCountrycode, String selectedCellnumber, String selectedpickedDate, String selectedIssues, int selectedRatingbar, String selectedDetailDescription) { }
