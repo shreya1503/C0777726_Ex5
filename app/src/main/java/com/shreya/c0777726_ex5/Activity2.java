@@ -22,6 +22,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
@@ -242,28 +243,33 @@ public class Activity2 extends AppCompatActivity
                 {
 
                     Intent mintent = new Intent(Activity2.this, Activity3.class);
-                    Bundle extras = new Bundle();
 
-                    extras.putString("SuFix", suffixsp.getSelectedItem().toString());
-                    extras.putString("firstName", firstname.getText().toString());
-                    extras.putString("lastName", lastname.getText().toString());
-                    extras.putString("empStatus", empstatussp.getSelectedItem().toString());
-                    extras.putString("Desgs", designationsp.getSelectedItem().toString());
-                    extras.putString("StreetNo", streetno.getText().toString());
-                    extras.putString("StreetName", streetname.getText().toString());
-                    extras.putString("Province", province.getText().toString());
-                    extras.putString("City", city.getText().toString());
-                    extras.putString("Country", country.getText().toString());
-                    extras.putString("Postalcode", postalcode.getText().toString());
-                    extras.putString("Email", email.getText().toString());
-                    extras.putString("Countrycode", countrycode.getText().toString());
-                    extras.putString("Cellnumber", cellnumber.getText().toString());
-                    extras.putString("pickedDate", Datetxt.getText().toString());
-                    extras.putInt("Ratingbar", ratingbar.getProgress());
-                    extras.putString("Issues", issuesp.getSelectedItem().toString());
-                    extras.putString("DetailDescription", detaildescription.getText().toString());
-                    mintent.putExtras(extras);
+
+                    String selectedsuffix =  suffixsp.getSelectedItem().toString();
+                    String selectedfirstname = firstname.getText().toString();
+                    String selectedlastname = lastname.getText().toString();
+                    String selectedempStatus = empstatussp.getSelectedItem().toString();
+                    String selectedDesgs= designationsp.getSelectedItem().toString();
+                    String selectedStreetNo= streetno.getText().toString();
+                    String selectedStreetName= streetname.getText().toString();
+                    String selectedProvince= province.getText().toString();
+                    String selectedCity= city.getText().toString();
+                    String selectedCountry= country.getText().toString();
+                    String selectedPostalcode= postalcode.getText().toString();
+                    String selectedEmail= email.getText().toString();
+                    String selectedCountrycode= countrycode.getText().toString();
+                    String selectedCellnumber= cellnumber.getText().toString();
+                    String selectedpickedDate= Datetxt.getText().toString();
+                    int selectedRatingbar= (int) ratingbar.getRating();
+                    String selectedIssues= issuesp.getSelectedItem().toString();
+                    String selectedDetailDescription= detaildescription.getText().toString();
+
+                    complaintIssues c1 = new complaintIssues(selectedsuffix,selectedfirstname,selectedlastname,selectedempStatus,selectedDesgs,selectedStreetNo,selectedStreetName,selectedProvince,selectedCity,selectedCountry,selectedPostalcode,selectedEmail,selectedCountrycode,selectedCellnumber,selectedpickedDate,selectedIssues,selectedRatingbar,selectedDetailDescription);
+
+                    mintent.putExtra("object", (Serializable) c1);
+
                     startActivity(mintent);
+
 
 
                 }
@@ -322,4 +328,8 @@ public class Activity2 extends AppCompatActivity
     }
 
 
+    private class complaintIssues
+    {
+        public complaintIssues(String selectedsuffix, String selectedfirstname, String selectedlastname, String selectedempStatus, String selectedDesgs, String selectedStreetNo, String selectedStreetName, String selectedProvince, String selectedCity, String selectedCountry, String selectedPostalcode, String selectedEmail, String selectedCountrycode, String selectedCellnumber, String selectedpickedDate, String selectedIssues, int selectedRatingbar, String selectedDetailDescription) { }
+    }
 }

@@ -38,10 +38,7 @@ public class Activity3 extends AppCompatActivity {
         String IS = extras.getString("Issues");
         int RB = extras.getInt("Ratingbar");
         String DD = extras.getString("DetailDescription");
-
-
-
-
+        
 
         form.setText("**********COMPLAINT DETAILS FORM**********"+
                 "**********\n"+"Name :    " +su+" " +FN+" " +LN+" \n Employment Status :    "+ ES+" \n Designation :    "  +DS+" \n Street No. :    " +SNO+" \n Street Name :    " +SN+" \n Province :    "+
@@ -49,11 +46,6 @@ public class Activity3 extends AppCompatActivity {
                 +" \n Contact No. :    " +CNO+" \n Complaint Issue Date :    " +DT+" \n Issues :    " +IS+" \n Rating :    " +RB+" \n Detailed Description :    " +DD);
         form.setTextColor(Color.DKGRAY);
         form.setTextSize(20);
-
-
-
-
-
 
     }
 }
