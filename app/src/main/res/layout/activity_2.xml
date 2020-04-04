@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6CBCB"
+        android:fillViewport="true">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="409dp"
+            android:layout_height="729dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context=".complaint register">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#DFA4A4"
+                    android:gravity="center"
+                    android:text="FILE COMPLAINT"
+                    android:textColor="#8E2B2B"
+                    android:textSize="24sp" />
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="163dp"
+                        android:layout_height="wrap_content"
+                        android:text="Suffix"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:entries="@array/suffix" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/first_name"
+                        android:layout_width="205dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:hint="First Name" />
+
+                    <EditText
+                        android:id="@+id/last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:hint="Last Name" />
+
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="Employment status"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <Spinner
+                        android:id="@+id/status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:entries="@array/status" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Designation"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <Spinner
+                        android:id="@+id/designation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:entries="@array/designation" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/stno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Street No." />
+
+                    <EditText
+                        android:id="@+id/streetname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Street Name" />
+
+
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/provinance"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+
+                        android:hint="Province" />
+
+                    <EditText
+                        android:id="@+id/city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:hint="City" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/country"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+
+                        android:hint="Country" />
+
+                    <EditText
+                        android:id="@+id/postalcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:hint="Postal Code" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:hint="Email ID" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/countrycode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:hint="Country Code" />
+
+                    <EditText
+                        android:id="@+id/cellnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:hint="Contact No." />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Issue Date"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <EditText
+                        android:id="@+id/txtDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:hint="DD?MM?YY" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Issue Type"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <Spinner
+                        android:id="@+id/issue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:entries="@array/issue" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ratings"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <RatingBar
+                        android:id="@+id/rating"
+                        style="@style/Widget.AppCompat.RatingBar"
+                        android:filterTouchesWhenObscured="false"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:progressTint="#F61807"
+                        android:stepSize="1" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Detail Description"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <EditText
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:hint=" " />
+                </TableRow>
+
+                <Button
+
+                    android:id="@+id/register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:backgroundTint="#D68B8B"
+                    android:gravity="center"
+                    android:text="SUBMIT" />
+
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:background="#D68B8B"
+                    android:gravity="center"
+                    android:text="Clear" />
+
+            </TableLayout>
+        </ScrollView>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
